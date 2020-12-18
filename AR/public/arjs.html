@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ARJS Demo</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  </head>
+  <body>
+    <a-scene embedded arjs>
+  <a-marker preset="hiro">
+    <a-entity
+      position="0 0 0"
+      scale="0.05 0.05 0.05"
+      gltf-model="spaceship.glb"></a-entity>
+  </a-marker>
+  <a-entity camera></a-entity>
+</a-scene>
+  </body>
+</html>
